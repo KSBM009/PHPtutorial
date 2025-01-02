@@ -3,3 +3,5 @@ Hello, World! x1
 <?php
     echo "Hello, World! x3";
 ?>
+<br>
+Hi, World!
