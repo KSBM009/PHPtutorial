@@ -20,7 +20,62 @@
     - Variables are case-sensitive ($name and $NAME are two different variables)
     */
 
+    // String
     $name = 'Kevin Stephen Biju';
     echo $name;
+    echo '<br>';
+
+    // Integer
     $age = 21;
     echo $age;
+    echo '<br>';
+
+    // Boolean
+    $is_Married = false;
+    echo $is_Married;
+    echo '<br>';
+    var_dump($is_Married);
+    echo '<br>';
+
+    // Boolean
+    $is_Healhty = true;
+    echo $is_Healhty;
+    echo '<br>';
+    var_dump($is_Healhty);
+    echo '<br>';
+
+    // Float
+    $cash_on_hand = 100.50;
+    echo $cash_on_hand;
+    echo '<br>';
+    var_dump($cash_on_hand);
+    echo '<br>';
+
+    echo '$name is $age years old.';
+    echo '<br>';
+    echo $name . ' is ' . $age . ' years old.';
+    echo '<br>';
+    echo "$name is $age years old.";
+    echo '<br>';
+    echo "${name} is ${age} years old.";
+    echo '<br>';
+    echo 5 + 5;
+    echo '<br>';
+    echo '5' + '5';   
+    echo '<br>';
+    $x = '5' + '5';
+    var_dump($x);
+    echo '<br>';
+    echo 7 - 3;
+    echo '<br>';
+    echo 7 * 3;
+    echo '<br>';
+    echo 15 / 3;
+    echo '<br>';
+    echo 15 % 2;
+    echo '<br>';
+
+    //Constants
+    define('PI', 3.14);
+
+    echo PI;
