@@ -38,3 +38,13 @@
     } else {
         echo "Good Evening!";
     }
+
+    $posts = ['First Post', 'Second Post', 'Third Post'];
+
+    if(empty($posts)){
+        echo 123;
+    }
+
+    if(!empty($posts)){
+        echo 4567;
+    }
