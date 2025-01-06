@@ -46,3 +46,5 @@
     } else {
         echo "No Posts Found!";
     }
+
+    echo !empty($posts) ? $posts[0] : "No Posts Found!";
