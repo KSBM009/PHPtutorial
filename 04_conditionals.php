@@ -41,10 +41,8 @@
 
     $posts = ['First Post', 'Second Post', 'Third Post'];
 
-    if(empty($posts)){
-        echo 123;
-    }
-
     if(!empty($posts)){
-        echo 4567;
+        echo $posts[0];
+    } else {
+        echo "No Posts Found!";
     }
