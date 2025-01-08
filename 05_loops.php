@@ -37,7 +37,7 @@
     do...while loop will always execute the block of code once, even if the condition is false.
     */
 
-    $z = 1;
+    $z = 7;
 
     do {
         echo "The number is : $z <br>";
