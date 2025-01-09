@@ -21,4 +21,18 @@
     }
 
     echo sum(10, 20);
-    
+
+    function sum_of_nos($a = 5, $b = 7){
+        return $a + $b;
+    }
+
+    echo sum_of_nos();
+
+    $subtract = function($a, $b){
+        return $a - $b;
+    };
+
+    echo $subtract(10, 5);
+
+    $multiply = fn($a, $b) => $a * $b;
+    echo $multiply(15, 5);
