@@ -44,3 +44,15 @@
     $c = array_combine($a, $b);
 
     print_r($c);
+
+    $keys = array_keys($c);
+    print_r($keys);
+
+    $flipped = array_flip($c);
+    print_r($flipped);
+
+    $values = array_values($c);
+    print_r($values);
+
+    $numbers = range(1, 30);
+    print_r($numbers);
