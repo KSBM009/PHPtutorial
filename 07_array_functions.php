@@ -23,7 +23,7 @@
 
     print_r($fruits);
 
-    // Split it into different chunks
+    // Split an array into different chunks
     $chunked = array_chunk($fruits, 3);
 
     print_r($chunked);
@@ -36,3 +36,9 @@
 
     print_r($arr);
     print_r($ar);
+
+    // Combine arrays
+    $a = ['green', 'red', 'yellow'];
+    $b = ['avacado', 'apple', 'banana'];
+
+    $c = array_combine($a, $b);
