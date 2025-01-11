@@ -56,3 +56,16 @@
 
     $numbers = range(1, 30);
     print_r($numbers);
+
+    $newNumbers = array_map(function($number){
+        return "Number ${number}";
+    },$numbers);
+
+    print_r($newNumbers);
+
+    $filtered = array_filter($numbers, fn($number) => $number <= 10);
+
+    print_r($filtered);
+
+    $sum = array_reduce($numbers, fn($carry, $number) => $carry + $number);
+    var_dump($sum);
