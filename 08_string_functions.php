@@ -12,4 +12,6 @@
 
     // Find the position of the first occurrence of a substring in a string
     echo strpos($string, 'World') . "<br>";
-    
+
+    // Find the position of the last occurrence of a substring in a string
+    echo strrpos($string, 'o') . "<br>";
