@@ -42,3 +42,14 @@
     if(str_ends_with($string, 'World!')){
         echo "String ends with 'World!'<br>";
     }
+
+    // HTML Entities
+    $str = "<h1>Hello, World!</h1>";
+    echo $str . "<br>";
+    echo htmlentities($str) . "<br>";
+    echo html_entity_decode($str) . "<br>";
+
+    $str1 = "<script>alert('Hello, World!');</script>";
+    echo $str1 . "<br>";
+    echo htmlentities($str1) . "<br>";
+    echo html_entity_decode($str1) . "<br>";
