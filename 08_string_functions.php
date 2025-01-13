@@ -15,3 +15,30 @@
 
     // Find the position of the last occurrence of a substring in a string
     echo strrpos($string, 'o') . "<br>";
+
+    // Reverse a string
+    echo strrev($string) . "<br>";
+
+    // Convert all characters in a string to lowercase
+    echo strtolower($string) . "<br>";
+
+    // Convert all characters in a string to uppercase
+    echo strtoupper($string) . "<br>";
+
+    // Uppercase/Captilize the first character of each word in a string
+    echo ucwords($string) . "<br>";
+
+    // String Replace
+    echo str_replace('World', 'Everyone', $string) . "<br>";
+
+    // Return portion of a string specified by the offset and length
+    echo substr($string, 0, 5) . "<br>";
+    echo substr($string, 5) . "<br>";
+
+    // Checking String starts with or ends with a particular substring
+    if(str_starts_with($string, 'Hello')){
+        echo "String starts with 'Hello'<br>";
+    }
+    if(str_ends_with($string, 'World!')){
+        echo "String ends with 'World!'<br>";
+    }
