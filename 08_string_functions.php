@@ -47,9 +47,11 @@
     $str = "<h1>Hello, World!</h1>";
     echo $str . "<br>";
     echo htmlentities($str) . "<br>";
+    echo htmlspecialchars($str) . "<br>";
     echo html_entity_decode($str) . "<br>";
 
     $str1 = "<script>alert('Hello, World!');</script>";
     echo $str1 . "<br>";
     echo htmlentities($str1) . "<br>";
+    echo htmlspecialchars($str1) . "<br>";
     echo html_entity_decode($str1) . "<br>";
