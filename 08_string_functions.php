@@ -55,3 +55,8 @@
     echo htmlentities($str1) . "<br>";
     echo htmlspecialchars($str1) . "<br>";
     echo html_entity_decode($str1) . "<br>";
+
+    printf(" %s likes to %s ", "Kevin", "code");
+    echo "<br>";
+
+    printf("1 + 2 = %d", 1 + 2);
