@@ -9,9 +9,8 @@
     // echo $_GET['age'];
 
     if(isset($_POST['submit'])){
-        $name = htmlentities($_POST['name']);
-        $age = htmlentities($_POST['age']);
-        echo $name . ' is ' . $age . ' years old.';
+        echo $_POST['name'];
+        echo $_POST['age'];
     }
 
 ?>
