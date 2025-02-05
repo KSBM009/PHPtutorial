@@ -8,23 +8,28 @@
 
     if(isset($_POST['submit'])){
 
-      $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
-      $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_SPECIAL_CHARS);
+      $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_SPECIAL_CHARS);
+      $password = $_POST['password'];
 
-      echo $name . ' is ' . $age . ' years old.';
-
+      if($username == 'Kevin' && $password == 'password'){
+        $_SESSION['username'] = $username;
+        header('Location: /PHPtutorial/extras/dashboard.php');
+      }
+      else{
+        echo ' Incorrect Login Credentials';
+      }
   }
 
 ?>
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
   <div>
-    <label for="name"> Name : </label>
-    <input type="text" name="name">
+    <label for="username"> Username : </label>
+    <input type="text" name="username">
   </div>
   <div>
-    <label for="age"> Age : </label>
-    <input type="text" name="age">
+    <label for="password"> Password : </label>
+    <input type="password" name="password">
   </div>
   <input type="submit" value="Submit" name="submit">
 </form>
