@@ -6,6 +6,8 @@
       Unlike cookies, sessions are stored on the server.
     */
 
+    session_start(); // Must be called before accessing any session data
+    
     if(isset($_POST['submit'])){
 
       $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -16,13 +18,13 @@
         header('Location: /PHPtutorial/extras/dashboard.php');
       }
       else{
-        echo ' Incorrect Login Credentials';
+        echo ' Invalid Login Credentials';
       }
   }
 
 ?>
 
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
   <div>
     <label for="username"> Username : </label>
     <input type="text" name="username">
