@@ -9,7 +9,11 @@
     $file = 'extras/users.txt';
 
     if(file_exists($file)){
-        echo readfile($file);
+        // echo readfile($file);
+        $handle = fopen($file, 'r'); // r = read, w = write, a = append
+        $contents = fread($handle, filesize($file));
+        fclose($handle);
+        echo $contents;
     } else {
         echo "File does not exist";
     }
