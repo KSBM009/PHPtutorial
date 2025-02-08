@@ -15,5 +15,11 @@
         fclose($handle);
         echo $contents;
     } else {
-        echo "File does not exist";
+        // echo "File does not exist";
+        $handle = fopen($file, 'w');
+        $contents = 'Kevin Stephen Biju' . PHP_EOL . 'Ryan Reji John' . PHP_EOL . 'Rijo Biju Abraham';
+        fwrite($handle, $contents);
+        fclose($handle);
     }
+
+?>
