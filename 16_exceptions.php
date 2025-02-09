@@ -16,8 +16,25 @@
         return 1/$x;
     }
 
-    // echo inverse(0) . '<br>';
-    echo inverse(5) . '<br>';
     echo inverse(10) . '<br>';
+
+    try {
+        echo inverse(5) . '<br>';
+        echo inverse(0) . '<br>';
+    } catch (Exception $e){
+        echo 'Caught Exception: ' . $e->getMessage() . '<br>';
+    } finally {
+        echo 'First Finally' . '<br>';
+    }
+
+    try {
+        echo inverse(0) . '<br>';
+    } catch (Exception $e){
+        echo 'Caught Exception: ' . $e->getMessage() . '<br>';
+    } finally {
+        echo 'Second Finally' . '<br>';
+    }
+
+    echo 'Hello World';
 
 ?>
