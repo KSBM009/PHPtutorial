@@ -13,4 +13,26 @@
       Objects can be created from classes.
     */
     
+    class User{
+      // Properties are attributes that belong to a Class
+
+      // Access Modifiers: Public, Private, Protected
+      // public - can be accessed from anywhere
+      // private - can only be accessed from inside the class
+      // protected - can only be accessed from inside the class and by inheriting classes
+      public $name;
+      public $email;
+      private $password;
+    }
+
+    // Instantiate a User Object
+    $user1 = new User();
+    $user1->name = 'Kevin Stephen Biju';
+    $user1->email = 'kevinstephenbiju2003@gmail.com';
+
+    var_dump($user1);
+    
+    echo $user1->name;
+    // echo $user1->password; This will throw an error as password is private
+
 ?>
