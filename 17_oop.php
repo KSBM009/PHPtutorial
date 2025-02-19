@@ -23,6 +23,11 @@
       public $name;
       public $email;
       private $password;
+
+      // Method is a function that belongs a class
+      function set_name($name){
+        $this->name = $name;
+      }
     }
 
     // Instantiate a User Object
@@ -31,8 +36,12 @@
     $user1->email = 'kevinstephenbiju2003@gmail.com';
 
     var_dump($user1);
+    echo '<br>';
     
-    echo $user1->name;
+    echo $user1->name . '<br>';	// Kevin Stephen Biju
     // echo $user1->password; This will throw an error as password is private
 
+    $user1->set_name('Kevin');
+    echo $user1->name . '<br>';  // Kevin
+    
 ?>
